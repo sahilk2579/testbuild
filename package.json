@@ -11,10 +11,9 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-	"start": "set  PORT=3006 &&  react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+	
+    "build": "rm -rf dist && parcel build src/index.html",
+    "watch": "parcel src/index.html"
   },
   "eslintConfig": {
     "extends": "react-app"
